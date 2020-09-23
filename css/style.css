@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.log-in-row {
+  width: 100%;
+  height: 80px;
+  background-color: ghostwhite;
+}
+
+.layout-margins {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+.left, .right {
+  width: 50%;
+  height: 80px;
+  border: 2px solid black;
+  float: left;
+}
+
+.float {
+  float: left;
+}
+
+.log-in-row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.description {
+  border: 1px solid black;
+
+  height: 500px;
+  background-color: seashell;
+}
+
+.prova {
+  width: 100%;
+  height: 700px;
+  border: 2px solid black;
+}
+
+.azure-hr {
+  background-color: paleturquoise;
+  width: 100%;
+  height: 60px;
+}
+.why-choose-us {
+  background-color: ghostwhite;
+  width: 100%;
+  height: 1300px;
+}
+
+.why-choose-us {
+  text-align: center;
+}
+
+.learn-more {
+  background-color: white;
+  width: 100%;
+  height: 400px;
+  margin-top: 30px;
+}
+
+.marketing-hub, .sales-hub, .service-hub {
+  background-color: white;
+  width: 30%;
+  height: 500px;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.powerful-sentence {
+  height: 300px;
+  border: 2px solid black;
+}
+.marketing-hub {
+  float: left;
+}
+
+.service-hub {
+  float: right;
+}
+
+.cards::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.stats {
+  width: 100%;
+  height: 800px;
+  background: -moz-linear-gradient(45deg, #00a6bb, #afebe4);
+}
+
+.learn-and-grow {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+}
