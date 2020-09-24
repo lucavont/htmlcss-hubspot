@@ -2,12 +2,88 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Style The Dropdown Button */
+.english {
+  color: #32495b;
+  /* padding-right: 5px; */
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.arrow {
+  cursor: pointer;
+  color: #32495b;
+}
+
+.line-height {
+  line-height: 80px;
+  vertical-align: middle;
+}
+
+.contact-us {
+  color: #32495b;
+  font-size: 16px;
+  border: none;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+{
+  margin-top: 20px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  line-height: 45px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.left p {
+  display: inline;
+  margin-left: 20px;
+  color: #32495b;
+}
+
+.left i {
+  color: #32495b;
 }
 
 .log-in-row {
   width: 100%;
   height: 80px;
   background-color: ghostwhite;
+  border-bottom: 1px solid black;
 }
 
 .layout-margins {
@@ -19,8 +95,86 @@
 .left, .right {
   width: 50%;
   height: 80px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   float: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.right i {
+  margin-right: 20px;
+}
+
+.log-in-btn {
+  background-color: transparent;
+  border: none;
+  color: coral;
+  padding: 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 1px solid coral;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.gethubspot-btn-nav {
+  background-color: coral;
+  border: none;
+  color: ghostwhite;
+  padding: 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 1px solid coral;
+  border-radius: 4px;
+}
+
+.gethubspot-btn {
+  background-color: coral;
+  border: none;
+  color: ghostwhite;
+  padding: 18px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 1px solid coral;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+
+.pricing {
+  color: #32495b;
+  font-size: 16px;
+  border: none;
+  margin-left: 20px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.nav-ul {
+  text-align: right;
+}
+
+ .dropdown > li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.dropdown > li > a {
+  color: #32495b;
+  text-decoration: none;
 }
 
 .float {
@@ -33,28 +187,56 @@
   clear: both;
 }
 
-.description {
-  border: 1px solid black;
-
-  height: 500px;
-  background-color: seashell;
+.img-wrapper {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.prova {
+.img-wrapper > h1 {
+  font-family: 'Rubik', sans-serif;
+  color: #32495b;
+  font-size: 50px;
+  margin-top: 60px;
+}
+
+.img-wrapper p {
+  line-height: 30px;
+  color: #32495b;
+  margin-top: 30px;
+}
+
+.p-smaller {
+  font-size: 14px;
+}
+
+.description-background {
   width: 100%;
   height: 700px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  background-image: url(https://cdn2.hubspot.net/hubfs/53/raw_assets/public/_Web%20Team%20Assets/Website/assets/svg/hero.svg);
+  display: inline-block;
+  background-size: cover;
+  background-color: seashell;
+  position: relative;
+  background-size: 1200px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
+
 
 .azure-hr {
   background-color: paleturquoise;
   width: 100%;
-  height: 60px;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  border-top: 3px solid #32495b;
+  border-bottom: 3px solid #32495b;
 }
 .why-choose-us {
   background-color: ghostwhite;
   width: 100%;
-  height: 1300px;
+  height: 1500px;
 }
 
 .why-choose-us {
@@ -65,7 +247,9 @@
   background-color: white;
   width: 100%;
   height: 400px;
-  margin-top: 30px;
+  margin-top: 100px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 6px 0px lightgrey;
 }
 
 .marketing-hub, .sales-hub, .service-hub {
@@ -78,8 +262,100 @@
 
 .powerful-sentence {
   height: 300px;
-  border: 2px solid black;
+  padding-top: 30px;
 }
+
+.powerful-sentence h1 {
+  font-family: 'Rubik', sans-serif;
+  color: #32495b;
+}
+
+.powerful-sentence p {
+  color: #32495b;
+  padding-top: 30px;
+}
+
+.powerful-sentence span {
+  display: inline-block;
+  transform: rotate(-90deg);
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #32495b;
+}
+
+.learn-more-left {
+  line-height: 200px;
+  vertical-align: middle;
+  width: 30%;
+  height: 100%;
+  float: left;
+}
+
+.learn-more-left img {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  display: block;
+  margin: auto;
+}
+
+.right-section {
+  text-align: left;
+  color: #32495b;
+  width: 100%;
+  padding-top: 40px;
+}
+.right-section h2 {
+  font-family: 'Rubik', sans-serif;
+  padding-top: 40px;
+}
+.right-section > .right-text > p {
+  font-size: 16px;
+  width: 90%;
+  line-height: 30px;
+  margin-top: 10px;
+}
+
+h2 > span {
+  background: #32495b;
+  padding: 0px 250px;
+  font-size: 1px;
+  vertical-align: middle;
+  padding-top: 1px;
+  margin-left: 80px;
+}
+
+.right-section h4 {
+  margin-top: 40px;
+  padding-right: 40px;
+}
+
+.right-section i {
+  color: coral;
+  margin-top: 40px;
+  padding-right: 10px;
+}
+
+.right-section .right-text h4 {
+  display: inline-block;
+}
+
+.learn-more-left button {
+    background-color: coral;
+    border: none;
+    color: ghostwhite;
+    padding: 18px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 1px solid coral;
+    border-radius: 4px;
+    margin-top: 80px;
+    display: block;
+    margin: auto;
+}
+
 .marketing-hub {
   float: left;
 }
@@ -170,17 +446,17 @@ footer {
   margin-top: 50px;
 }
 
-ul {
+.footer-ul {
   text-align: center;
 }
 
-ul > li {
+.footer-ul > li {
   display: inline-block;
   padding: 20px;
   padding-top: 70px;
 }
 
-ul > li > a {
+.footer-ul li > a {
   color: white;
   text-decoration: none;
 }
